@@ -1,7 +1,6 @@
 version: 2.1
 jobs:
-  environment:
-    myname: test-job
+  
   say-hello:
     docker:
       - image: circleci/node:13.8.0
@@ -26,6 +25,8 @@ jobs:
       - run:
           name: "Say my name"
           command: echo $myname
+    environment:
+      myname: test-job
 workflows:
   say-hello-workflow:
     jobs:
