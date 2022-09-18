@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run:
           name: "Say my name"
-          command: "echo $myname"
+          command: echo $myname
 workflows:
   say-hello-workflow:
     jobs:
