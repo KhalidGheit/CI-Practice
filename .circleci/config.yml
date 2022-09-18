@@ -16,7 +16,7 @@ jobs:
           command: "echo Hello"
 
 
-  say-World:
+  say-world:
 
     docker:
       - image: circleci/node:13.8.0
@@ -32,7 +32,7 @@ workflows:
   say-hello-workflow:
 
     jobs:
-    
+
       - say-hello
 
       - say-world:
